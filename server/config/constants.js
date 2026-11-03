@@ -1,0 +1,23 @@
+module.exports = {
+  PORT: process.env.PORT || 5000,
+  MONGO_URI: process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/bcgame',
+  JWT_SECRET: process.env.JWT_SECRET || 'bc-game-dev-secret-change-me',
+  JWT_EXPIRES_IN: '30m',
+  STARTING_BALANCE: 1000,
+  HOUSE_EDGE: 0.04,
+  GROWTH: 0.06,
+  WAIT_MS: 7000,
+  CRASH_PAUSE_MS: 2800,
+  MAX_CRASH: 1000,
+  MIN_BET: 0.01,
+  MAX_BET: 100000,
+  MIN_CASHOUT: 1.01,
+  MAX_CASHOUT: 1000,
+  TRENBALL_PAYOUTS: {
+    red: 1.96,
+    green: 1.96,
+    moon: 9.6,
+  },
+  DEMO_PACKS: [100, 500, 1000, 5000],
+  PASSWORD_MIN: 8,
+};
